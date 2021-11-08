@@ -13,7 +13,6 @@ diagram_8x_flow {
     context("信息推广上下文") {
         val promoter = participant_party("思沃租房") play role_party("推广商")
         val advertiser = participant_party("预充值用户") play role_party("广告主")
-//        val rental_info = participant_thing("房屋租赁信息")
 
         proposal("信息推广方案", promoter, Companion.ONE_TO_ONE) {
             key_timestamps("创建时间")
