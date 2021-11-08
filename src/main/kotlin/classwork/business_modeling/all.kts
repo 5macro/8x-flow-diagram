@@ -96,7 +96,7 @@ diagram_8x_flow {
 
         contract("预充值协议", prepaid_user, siwo_rental) {
             key_timestamps("签订时间")
-            participant_place("预充值账户") relate this
+            participant_place("预充值账户").relate(this)
 
             prepaid_fulfillment = fulfillment("预充值", Companion.ONE_TO_N) {
                 request(siwo_rental) {
