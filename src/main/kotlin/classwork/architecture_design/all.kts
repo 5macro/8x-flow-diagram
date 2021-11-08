@@ -1,4 +1,4 @@
-package doxflow.samples
+package classwork.architecture_design
 
 import doxflow.diagram_8x_flow
 import doxflow.dsl.fulfillment
@@ -95,7 +95,7 @@ diagram_8x_flow {
         val prepaid_user = participant_party("房产经纪人") play role_party("预充值用户")
         val siwo_rental = role_party("思沃租房")
 
-        contract("商品订单合同", prepaid_user, siwo_rental) {
+        contract("预充值协议", prepaid_user, siwo_rental) {
             key_timestamps("签订时间")
             participant_place("预充值账户") relate this
 
@@ -215,4 +215,4 @@ diagram_8x_flow {
             }
         }
     }
-} export "./diagrams/model.png"
+} export "./diagrams/all.png"
